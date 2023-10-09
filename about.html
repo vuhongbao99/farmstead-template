@@ -30,6 +30,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+
     <!-- my css  -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -172,12 +175,11 @@
           <div class="provide_content mt-5 text-center">
             <div class="content_icon">
               <img src="./img/video.jpg" class="w-100" alt="">
-              <a href="">
+              <a href="#small-dialog">
                 <i class="fa-solid fa-play"></i>
               </a>
-            <div class="content_clip">
-              <iframe src="https://youtu.be/1JuYQgpbrW0?si=0f_Qq6uRp2Nop3Jx" frameborder="0"></iframe>
-              
+            <div class="content_clip" id="#small-dialog">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/UUB4u2aM2Gs?si=XoUDTp5BagqDCXdh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             
           </div>
@@ -187,6 +189,14 @@
     <footer>
       <!-- place footer here -->
     </footer>
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+
+    </script>
+   
+    <!-- Magnific Popup core JS file -->
+    <script src="magnific-popup/jquery.magnific-popup.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Bootstrap JavaScript Libraries -->
@@ -201,5 +211,6 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+    <script></script>
   </body>
 </html>
