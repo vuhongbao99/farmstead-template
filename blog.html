@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blog Posts</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!-- GOOGLE FONT -->
+      <!-- Volkhov -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+        <!-- Source San -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;700&display=swap" rel="stylesheet">
+
+    
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- START HEADER -->
+    <header id="site-header" class="main-header fixed-top">
+      <div class="container w3Layouts_header">
+        <nav class="navbar navbar-expand-lg stroke">             
+          <h1>
+            <a class="navbar-brand d-flex align-items-center logo" href="https://wp.w3layouts.com/farmstead/">
+              Farmstead <i class="fa fa-leaf" aria-hidden="true"></i> </a>
+          </h1>
+          <div class="navbar ml-lg-auto">
+              <!-- search button -->
+            <div class="search_in_header">
+              <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="input">
+                <input type="search" id="headerSearch">
+              </div>
+            </div>
+            <div class="clear"></div>
+
+              <!-- toggle switch for light and dark theme -->
+            <div class="cont-ser-position mr-3 DarkandLight">
+              <nav class="navigation">
+                <div class="theme-switch-wrapper">
+                  <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <div class="mode-container">
+                      <i class="gg-sun"></i>
+                      <i class="gg-moon"></i>
+                    </div>
+                  </label>
+                </div>
+              </nav>
+            </div>
+            
+              <!-- menu -->
+            <ul id="menu">
+              <li>
+                <input id="check02" type="checkbox" name="menu" />
+                <label for="check02"><span class="fa fa-bars" aria-hidden="true"></span></label>
+                <ul id="primary-menu" class="submenu">
+                  <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-27"><a href="https://wp.w3layouts.com/farmstead/">Home</a></li>
+                  <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="https://wp.w3layouts.com/farmstead/about-page/">About</a></li>
+                  <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-13 current_page_item menu-item-32"><a href="https://wp.w3layouts.com/farmstead/services-page/" aria-current="page">Services</a></li>
+                  <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="https://wp.w3layouts.com/farmstead/blog-posts/">Blog Posts</a></li>
+                  <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="https://wp.w3layouts.com/farmstead/single-landing-page/">Landing page</a></li>
+                  <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="https://wp.w3layouts.com/farmstead/elements-page/">Elements page</a></li>
+                  <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="https://wp.w3layouts.com/farmstead/404-page/">404 page</a></li>
+                  <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="https://wp.w3layouts.com/farmstead/contact-page/">Contact</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- START BANNER -->
+    <section class="banner py-5">
+      <div class="banner__content container py-lg-5 py-sm-4 mt-5">
+        <h4 class="fw-bold mb-2">Blog Posts</h4>
+        <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item fw-bold"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- END BANNER -->
+
+    <!-- START BLOG -->
+    <section class="blog section">
+      <div class="blog__content container py-4">
+        <div class="row">
+          <div class="col-xl-9 col-lg-8 pr-lg-5 blog__left">
+              <!-- item -->
+            <div class="blog__item  mb-5">
+              <article id="post_1" class="post">
+                <div class="card">
+                  <div class="card__header position-relative">
+                    <a href="#"></a>
+                    <a href="" class="img__blog"><img src="./img/blog2.jpg" class="card-img-top" alt="blog1"></a>
+                  </div>
+                  <div class="card__body pt-4 pb-3">
+                    <div class="mt-4">
+                      <h5>March 24, 2023 <span><a href="#">- by W3Layouts</a></span></h5>
+                      <a href="#" class="blog__title">Hello world!</a>
+                      <button class="mt-3"><a href="#">Read More</a></button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+              <!-- item -->
+            <div class="blog__item  mb-5">
+              <article id="post_2">
+                <div class="card">
+                  <div class="card__header">
+                    <a href="#"></a>
+                    <a href="" class="img__blog"><img src="./img/blog1.jpg" class="card-img-top" alt="blog2"></a>
+                  </div>
+                  <div class="card_body pt-4 pb-3">
+                    <div class="mt-4">
+                      <h5>March 24, 2023 <span><a href="#">- by W3Layouts</a></span></h5>
+                      <a href="#" class="blog__title">Sed ut perspiciatis unde omnis iste natus</a>
+                      <button class="mt-3"><a href="#">Read More</a></button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+              <!-- item -->
+            <div class="blog__item  mb-5">
+              <article id="post_3">
+                <div class="card">
+                  <div class="card__header">
+                    <a href="#"></a>
+                    <a href="" class="img__blog"><img src="./img/bg2.jpg" class="card-img-top" alt="blog3"></a>
+                  </div>
+                  <div class="card_body pt-4 pb-3">
+                    <div class="mt-5">
+                      <h5>March 24, 2023 <span><a href="#">- by W3Layouts</a></span></h5>
+                      <a href="#" class="blog__title">Nemo enim ipsam quia sit aspernatur aut odit</a>
+                      <button class="mt-3"><a href="#">Read More</a></button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+              <!-- item -->
+            <div class="blog__item  mb-5">
+              <article id="post_4">
+                <div class="card">
+                  <div class="card__header">
+                    <a href="#"></a>
+                    <a href="" class="img__blog"><img src="./img/bg1.jpg" class="card-img-top" alt="blog4"></a>
+                  </div>
+                  <div class="card_body pt-4 pb-3">
+                    <div class="mt-4">
+                      <h5>March 24, 2023 <span><a href="#">- by W3Layouts</a></span></h5>
+                      <a href="#" class="blog__title">Hello world!</a>
+                      <button class="mt-3"><a href="#">Read More</a></button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <nav aria-label="...">
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <span class="page-link">1</span>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active" aria-current="page">
+                    <span class="page-link">2</span>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+            </nav>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 mt-lg-0 mt-5 blog__right">
+            <div class="blog__righSideBar">
+              <aside id="sideBar">
+                <section class="widget search__blog">
+                  <form class="d-flex search__form" role="search" method="get">
+                    <input class="search__place me-2" type="search" placeholder="Search..." aria-label="Search">
+                    <input type="submit" class="search__submit" value="Search">
+                  </form>
+                </section>
+                <section class="side_posts widget__item">
+                  <h2 class="widget_title">Recent Posts</h2>
+                  <ul>
+                    <li><a href="#">Hello World!</a></li>
+                    <li><a href="#">Sed Ut Perspiciatis Unde Omnis Iste Natus</a></li>
+                    <li><a href="#">Nemo enim ipsam quia sit aspernatur aut odit</a></li>
+                    <li><a href="#">Ut enim ad minima, quis nostrum eationem</a></li>
+                    <li><a href="#">At Eos Et Accusamus Et Iusto Odio Ssimos Duci</a></li>
+                  </ul>
+                </section>
+                <section class="side_recent_comment">
+                  <h2 class="widget_title">Recent Comments</h2>
+                  <ul>
+                    <li class="recentcomment">
+                      <span><a href="#">A WordPress Commentor</a></span> on <a href="#">Hello World!</a>
+                    </li>
+                    <li>
+                      <span><a href="#">W3Layouts</a></span> on <a href="#">At Eos Et Accusamus Et Iusto Odio Ssimos Duci</a>
+                    </li>
+                    <li>
+                      <span><a href="#">A WordPress Commentor</a></span> on <a href="#">Hello World!</a>
+                    </li>
+                  </ul>
+                </section>
+                <section class="achives widget__item">
+                  <h2 class="widget_title">Archives</h2>
+                  <ul>
+                    <li>
+                      <a href="#">March 2023</a>
+                    </li>
+                  </ul>
+                </section>
+                <section class="categories widget__item">
+                  <h2 class="widget_title">Categories</h2>
+                  <ul>
+                    <li>
+                      <a href="#">Agriculture</a>
+                    </li>
+                    <li>
+                      <a href="#">Farming</a>
+                    </li>
+                  </ul>
+                </section>
+                <section class="meta widget__item">
+                  <h2 class="widget_title">Meta</h2>
+                  <ul>
+                    <li>
+                      <a href="#">Log In</a>
+                    </li>
+                    <li>
+                      <a href="#">Entries Feed</a>
+                    </li>
+                    <li>
+                      <a href="#">Comments Feed</a>
+                    </li>
+                    <li>
+                      <a href="#">WordPress.Org</a>
+                    </li>
+                    
+                  </ul>
+                </section>
+              </aside>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END BLOG -->
+
+    <!-- START FOOTER -->
+    <footer>
+      <div class="footer section">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 find__us">
+              <h3>find us</h3>
+              <p>Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.</p>
+              <p>Phone: <a href="tel:+12 23456790"> +12 23456790</a></p>
+              <p>Email: <a href="mailto:info@example.com"> info@example.com</a></p>
+              <p>Fax: <a href="tel:+ 11 367 21890"> + 11 367 21890</a></p>
+            </div>
+            <div class="col-4 center">
+              <h4><a class="logo" href="#">Farmstead <i class="fa-solid fa-leaf" aria-hidden="true"></i></a></h4>
+              <p>Duis imperdiet sapien tortor, vitae congue diam auctor vitae. Aliquam eget turpis ornare, euismod ligul aeget, enenatis dui.</p>
+              <p class="mt-5">© 2023 Farmstead. All Rights Reserved | WordPress Theme by <span>W3Layouts</span>.</p>
+            </div>
+            <div class="col-4 newsletter">
+              <h3>newsletter</h3>
+              <p>Subscribe to our mailing list and get updates to your email inbox.</p>
+              <div class="footer__form mt-3">
+                <form action="" class="subscribe d-flex mt-3" method="post">
+                  <input type="email" name="Email" placeholder="Email Address" required="">
+                  <button><span class="fa fa-paper-plane" aria-hidden="true"></span></button>
+                </form>
+              </div>
+              <ul class="footer__social mt-4 pt-2">
+                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <!-- theme switch js (light and dark)-->
+    <script>
+      function autoType(elementClass, typingSpeed) {
+        var thhis = $(elementClass);
+        thhis.css({
+          "position": "relative",
+          "display": "inline-block"
+        });
+        thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+        thhis = thhis.find(".text-js");
+        var text = thhis.text().trim().split('');
+        var amntOfChars = text.length;
+        var newString = "";
+        thhis.text("|");
+        setTimeout(function () {
+          thhis.css("opacity", 1);
+          thhis.prev().removeAttr("style");
+          thhis.text("");
+          for (var i = 0; i < amntOfChars; i++) {
+            (function (i, char) {
+              setTimeout(function () {
+                newString += char;
+                thhis.text(newString);
+              }, i * typingSpeed);
+            })(i + 1, text[i]);
+          }
+        }, 1500);
+      }
+
+      $(document).ready(function () {
+        // Now to start autoTyping just call the autoType function with the 
+        // class of outer div
+        // The second paramter is the speed between each letter is typed.   
+        autoType(".type-js", 200);
+      });
+    </script>
+<!-- //theme switch js (light and dark)-->
+    <script>
+      // $('document').ready(function(){
+      //   let sidebar = $('.blog__right');
+      //   let sidebar_content =  $('.blog__right .blog__righSideBar')
+
+      //   $(window).scroll(function(){
+      //     let scrollTop = $(this).scrollTop();
+      //     let viewportHeight = $(this).height();
+      //     let sidebarTop = sidebar.offset().top; 
+      //     let contentHeight = sidebar_content.height(); 
+      //     if( scrollTop >= contentHeight - viewportHeight + sidebarTop) {
+      //       sidebar_content.css('transform', `translateY(-${(contentHeight - viewportHeight + sidebarTop)}px)`); 
+      //       sidebar_content.css('position', 'fixed'); 
+      //     }
+      //     else {
+      //       sidebar_content.css('transform', ''); 
+      //       sidebar_content.css('position', '');
+      //     }
+      //   });
+      // });
+
+      let sidebar = document.getElementsByClassName("blog__right")[0];
+      let sidebar_content = document.getElementsByClassName("blog__righSideBar")[0];
+      
+      window.onscroll = () => {
+         let scrollTop = window.scrollY;
+         let viewportHeight = window.innerHeight;
+         let sidebarTop = sidebar.getBoundingClientRect().top + window.pageYOffset;
+         let contentHeight = sidebar_content.getBoundingClientRect().height;
+
+         if( scrollTop >= contentHeight - viewportHeight + sidebarTop) {
+            sidebar_content.style.transform = `translateY(-${(contentHeight - viewportHeight + sidebarTop)}px)`;
+            sidebar_content.style.position  = "fixed"; 
+          }
+          else {
+            sidebar_content.style.transform = "";
+            sidebar_content.style.position  = ""; 
+          }
+      };
+    </script>
+    
+  </body>
+</html>
