@@ -30,7 +30,16 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;700&display=swap" rel="stylesheet">
 
-    
+    <!--  -->
+        <!-- font icon dark mode -->
+        <link
+        href="https://unpkg.com/css.gg@2.0.0/icons/css/sun.css"
+        rel="stylesheet"
+      />
+      <link
+        href="https://unpkg.com/css.gg@2.0.0/icons/css/moon.css"
+        rel="stylesheet"
+      />
     <!-- FONT AWESOME -->
     <link
       rel="stylesheet"
@@ -44,7 +53,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body>
+  <body id="myBody">
     <!-- START HEADER -->
     <header id="site-header" class="main-header fixed-top">
       <div class="container w3Layouts_header">
@@ -65,19 +74,15 @@
             </div>
             <div class="clear"></div>
 
-              <!-- toggle switch for light and dark theme -->
-            <div class="cont-ser-position mr-3 DarkandLight">
-              <nav class="navigation">
-                <div class="theme-switch-wrapper">
-                  <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox">
-                    <div class="mode-container">
-                      <i class="gg-sun"></i>
-                      <i class="gg-moon"></i>
-                    </div>
-                  </label>
+              <!-- light and dark theme -->
+            <div class="theme-switch-wrapper">
+              <label class="theme-switch" for="switchButton">
+                <input type="checkbox" id="switchButton" />
+                <div class="mode-container">
+                  <i class="gg-sun"></i>
+                  <i class="gg-moon"></i>
                 </div>
-              </nav>
+              </label>
             </div>
             
               <!-- menu -->
@@ -104,7 +109,7 @@
     <!-- END HEADER -->
 
     <!-- START BANNER -->
-    <section class="banner py-5">
+    <section class="banner py-5 " id="banner">
       <div class="banner__content container py-lg-5 py-sm-4 mt-5">
         <h4 class="fw-bold mb-2">Blog Posts</h4>
         <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
@@ -422,6 +427,8 @@
           }
       };
     </script>
+
+    <script src="js/main.js"></script>
     
   </body>
 </html>

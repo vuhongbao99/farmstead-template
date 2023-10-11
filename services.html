@@ -30,7 +30,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;700&display=swap" rel="stylesheet">
 
-    
+    <!-- font icon dark mode -->
+    <link
+    href="https://unpkg.com/css.gg@2.0.0/icons/css/sun.css"
+    rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/moon.css"
+      rel="stylesheet"
+    />
     <!-- FONT AWESOME -->
     <link
       rel="stylesheet"
@@ -44,10 +52,9 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body id="darkAndLight">
+  <body id="myBody">
     <!-- START HEADER -->
     <header id="site-header" class="main-header fixed-top">
-      <a href="./blog.html">day la link den block</a>
       <div class="container w3Layouts_header">
         <nav class="navbar navbar-expand-lg stroke">             
           <h1>
@@ -66,19 +73,15 @@
             </div>
             <div class="clear"></div>
 
-              <!-- toggle switch for light and dark theme -->
-            <div class="cont-ser-position mr-3 DarkandLight">
-              <nav class="navigation">
-                <div class="theme-switch-wrapper">
-                  <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox">
-                    <div class="mode-container">
-                      <i class="gg-sun"></i>
-                      <i class="gg-moon"></i>
-                    </div>
-                  </label>
+               <!-- light and dark theme -->
+            <div class="theme-switch-wrapper">
+              <label class="theme-switch" for="switchButton">
+                <input type="checkbox" id="switchButton" />
+                <div class="mode-container">
+                  <i class="gg-sun"></i>
+                  <i class="gg-moon"></i>
                 </div>
-              </nav>
+              </label>
             </div>
             
               <!-- menu -->
@@ -90,7 +93,7 @@
                   <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-27"><a href="#">Home</a></li>
                   <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="#">About</a></li>
                   <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-13 current_page_item menu-item-32"><a href="#" aria-current="page">Services</a></li>
-                  <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="#">Blog Posts</a></li>
+                  <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="./blog.html">Blog Posts</a></li>
                   <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="#">Landing page</a></li>
                   <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="#">Elements page</a></li>
                   <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="#">404 page</a></li>
@@ -338,5 +341,6 @@
       crossorigin="anonymous"
     ></script>
     
+    <script src="./js/main.js"></script>
   </body>
 </html>
