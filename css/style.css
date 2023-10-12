@@ -729,35 +729,69 @@ nav ul.breadcrumbs {
 }
 
 .card-body-hover .text_hover {
-  position: absolute;
+  position:absolute;
   transform: translate( 3px, -258px);
   padding: 0 20px;
-  
+  transition: all 0.8s;
+
+ 
 }
 .card-body-hover .text_hover h4 {
-  color: black;
+  color: white;
   font-size: 24px;
   text-align: center;
   font-weight: 600;
+ 
 }
 
 .card-body-hover .text_hover p {
-  color: black;
+  color: white;
   text-align: center;
   font-size: 17px;
+
 }
 
  .icon_hover i {
-
-  color: red;
-  /* text-align: center; */
+  position:relative; 
+  color: white;
+  text-align: center;
   font-size: 20px;
   width: 100%;
-  
+  transform: translate( 120px, -20px);
+  /* margin: 20px 20px; */
+  padding: 0 10px;
+  transition: all 0.8s;
+}
+
+.card-body-title h5 {
+  color: black;
+  font-size: 21px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.card-body-title h2 {
+  color: #404040;
+  font-size: 16px;
+  text-align: center;
+}
+
+.content_card :hover .text_hover{
+  /* -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100); */
+  opacity: 1;
+  transform: translate(0, -10px);
+}
+
+.content_card :hover .icon_hover{
+  opacity:1;
+  transform: translate(0, 10px);
 }
 
 
-/* FOOTER */
+
+
+/* FOOTER */Ư
 footer h3 {
   color: black;
 }
