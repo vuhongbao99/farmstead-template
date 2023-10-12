@@ -16,7 +16,11 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-
+    
+    <!-- gg font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@300;400;700&family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
     <!-- FontAwesome 6.2.0 CSS -->
     <link
       rel="stylesheet"
@@ -25,13 +29,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <!-- animate -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
     <!-- Magnific Popup core CSS file -->
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+      integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- my css  -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -41,6 +53,7 @@
     <header>
       <!-- place navbar here -->
     </header>
+
     <section class="banner py-5">
       <div class="banner__content container py-lg-5 py-sm-4 mt-5">
         <h4 class="fw-bold mb-2">Services</h4>
@@ -52,6 +65,7 @@
         </nav>
       </div>
     </section>
+
     <section class="welcome container">
       <div class="row">
         <div class="col-6 left">
@@ -75,6 +89,44 @@
         </div>
       </div>
     </section>
+
+    <!-- START NUMNER -->
+    <section class="number section">
+      <div class="farm__content container">
+        <div class="row">
+          <div class="col-3">
+            <div class="farm__item">
+              <i class="fa-solid fa-bullhorn"></i>
+              <h3 class="counter">1,286</h3>
+              <p>our farms</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="farm__item">
+              <i class="fa-solid fa-basket-shopping"></i>
+              <h3 class="counter">36,076</h3>
+              <p>agriculture products</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="farm__item">
+              <i class="fa-regular fa-face-smile"></i>
+              <h3 class="counter">16,300</h3>
+              <p>happy customers</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="farm__item">
+              <i class="fa-solid fa-trophy"></i>
+              <h3 class="counter">10,630</h3>
+              <p>adwards won</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END NUMBER -->
+
     <!-- OurTeam -->
     <section class="OurTeam container-fluid mt-xl-5">
       <div class="OurTeam_content container py-5">
@@ -82,7 +134,11 @@
           <div class="row two-grids">
             <div class="col-6 title_left">
               <h5>Our Team</h5>
-              <h3>Experienced and Professional Team</h3>
+              <h3>
+                Experienced and <br />
+                Professional Team
+              </h3>
+              <h4 class="title_two">Team</h4>
             </div>
             <div class="col-6 title_right">
               <p>
@@ -91,7 +147,6 @@
                 perspiciatis unde omnis iste natus error sit.
               </p>
             </div>
-            <h4 class="title_two">Team</h4>
           </div>
         </div>
         <div class="row">
@@ -100,14 +155,26 @@
               <img src="./img/team1.jpg" class="card-img-top" alt="..." />
               <div class="card-body-hover">
                 <div class="text_hover">
-                  <a href="./img/team1.jpg"></a>
+                  <!-- <a href="./img/team1.jpg"></a> -->
                   <h4>Meet Me</h4>
                   <p>Lorem ipsum dolor sit amet,Ea consequuntur</p>
                 </div>
                 <div class="icon_hover">
-                  <span><i class="fa-brands fa-facebook-f"></i></span>
-                  <span><i class="fa-brands fa-twitter"></i></span>
-                  <span><i class="fa-brands fa-google-plus-g"></i></span>
+                  <a href="">
+                    <span>
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </span>
+                  </a>
+                  <a href="">
+                    <span>
+                      <i class="fa-brands fa-twitter"></i>
+                    </span>
+                  </a>
+                  <a href="">
+                    <span>
+                      <i class="fa-brands fa-google-plus-g"></i>
+                    </span>
+                  </a>
                 </div>
               </div>
               <div class="card-body-title">
@@ -141,7 +208,7 @@
             <div class="card">
               <img src="./img/team3.jpg" class="card-img-top" alt="..." />
               <div class="card-body-hover">
-                <div class="text_hover ">
+                <div class="text_hover">
                   <a href="./img/team3.jpg"></a>
                   <h4>Meet Me</h4>
                   <p>Lorem ipsum dolor sit amet,Ea consequuntur</p>
@@ -164,42 +231,184 @@
 
     <section class="provide">
       <div class="container">
-          <!-- title -->
-          <div class="provide_title text-center mt-5">
-              <h2>We Provide only fresh and healthy Products!</h2>
-              <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet elit consec tetur adipisi elit. Lorem ipsum dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus explicabo officia.
-              </p>
-
-          </div>
-          <!-- content -->
-          <div class="provide_content mt-5 text-center">
-            <div class="content_icon">
-              <img src="./img/video.jpg" class="w-100" alt="">
-              <a href="#small-dialog">
-                <i class="fa-solid fa-play"></i>
-              </a>
-            <div class="content_clip" id="#small-dialog">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/UUB4u2aM2Gs?si=XoUDTp5BagqDCXdh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- title -->
+        <div class="provide_title text-center mt-5">
+          <h2>We Provide only fresh and healthy Products!</h2>
+          <p class="description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum
+            dolor sit amet elit consec tetur adipisi elit. Lorem ipsum dolor sit
+            amet elit consec tetur adipisi elit. Iure voluptatibus explicabo
+            officia.
+          </p>
+          <div class="nutrition__video mt-5 position-relative">
+            <img
+              src="./img/video.jpg"
+              alt="video-thumbnail"
+              class="img-fluid rounded-3"
+            />
+            <div class="nutrition__play-button position-absolute">
+              <i class="fa fa-play rounded-circle"></i>
             </div>
-            
           </div>
 
+        </div>
+        <div class="pop-up-video d-none position-fixed p-3">
+          <div class="d-flex align-items-center justify-content-center">
+            <div class="position-relative">
+              <iframe
+                title="vimeo-player"
+                src="https://player.vimeo.com/video/101587706?h=187bfc0989"
+                width="640"
+                height="360"
+                frameborder="0"
+                allowfullscreen
+              >
+              </iframe>
+              <button class="button__close position-absolute">x</button>
+            </div>
+          </div>
+        </div>
+        <!-- content -->
+        <!-- <div class="provide_content mt-5 text-center">
+          <div class="content_icon">
+            <img src="./img/video.jpg" class="w-100" alt="" />
+            <a
+              href="#small-dialog"
+              class="open-popup-link popup-with-zoom-anim"
+            >
+              <i class="fa-solid fa-play"></i>
+            </a>
+          </div>
+          <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+            <iframe
+              src="https://player.vimeo.com/video/305185528"
+              frameborder="0"
+              allow="autoplay; fullscreen"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+        </div> -->
       </div>
-    <main></main>
+    </section>
+
+    <!-- START FOOTER -->
     <footer>
-      <!-- place footer here -->
+      <div class="footer section">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 find__us">
+              <h3>find us</h3>
+              <p>Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.</p>
+              <p>Phone: <a href="tel:+12 23456790"> +12 23456790</a></p>
+              <p>
+                Email: <a href="mailto:info@example.com"> info@example.com</a>
+              </p>
+              <p>Fax: <a href="tel:+ 11 367 21890"> + 11 367 21890</a></p>
+            </div>
+            <div class="col-4 center">
+              <h4>
+                <a class="logo" href="#"
+                  >Farmstead <i class="fa-solid fa-leaf" aria-hidden="true"></i
+                ></a>
+              </h4>
+              <p>
+                Duis imperdiet sapien tortor, vitae congue diam auctor vitae.
+                Aliquam eget turpis ornare, euismod ligul aeget, enenatis dui.
+              </p>
+              <p class="mt-5">
+                © 2023 Farmstead. All Rights Reserved | WordPress Theme by
+                <span>W3Layouts</span>.
+              </p>
+            </div>
+            <div class="col-4 newsletter">
+              <h3>newsletter</h3>
+              <p>
+                Subscribe to our mailing list and get updates to your email
+                inbox.
+              </p>
+              <div class="footer__form mt-3">
+                <form action="" class="subscribe d-flex mt-3" method="post">
+                  <input
+                    type="email"
+                    name="Email"
+                    placeholder="Email Address"
+                    required=""
+                  />
+                  <button>
+                    <span class="fa fa-paper-plane" aria-hidden="true"></span>
+                  </button>
+                </form>
+              </div>
+              <ul class="footer__social mt-4 pt-2">
+                <li>
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-github"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
+    <!-- END FOOTER -->
+
+    <!-- BACK TO TOP -->
+    <a href="#" class="backtotop cd-top text-replace js-cd-top">
+      <i class="fa-solid fa-arrow-turn-up"></i>
+    </a>
+
     <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    
 
+    <!-- js  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/jquery.countup.min.js"></script>
+    <script>
+      $(".counter").countUp({
+        time: 2000,
+        delay: 10,
+      });
     </script>
-   
-    <!-- Magnific Popup core JS file -->
+
+    <!--  core JS file -->
     <script src="magnific-popup/jquery.magnific-popup.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- /* Magnific Popup */ -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+      integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- BACK TO TOP JS -->
+    <script src="./js/main.js"></script>
+    <script src="./js/util.js"></script>
+
+    <!-- /* Bootstrap JavaScript Libraries */ -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -211,6 +420,6 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
-    <script></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
