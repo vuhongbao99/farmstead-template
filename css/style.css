@@ -14,6 +14,257 @@ li {
   list-style: none;
 }
 
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+/* LOGO FARM-LEAF */
+.fa-leaf {
+  display: inline-block;
+}
+
+a.logo {
+  position: relative;
+  font-size: 32px;
+}
+
+a.logo i {
+  position: absolute;
+  top: -7px;
+  left: 54px;
+  font-size: 20px;
+  color: #FB811E;
+}
+
+a,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* START HEADER */
+header.main-header {
+  background-color: transparent;
+  padding: 0px;
+  transition: all 0.4s ease 0s;
+  height: 90px;
+  display: grid;
+  align-items: center;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.w3Layouts_header .navbar {
+  justify-content: space-between;
+  padding: 0;
+}
+
+.w3Layouts_header a.logo {
+  color: #fb811e;
+  font-size: 32px;
+  padding: 0px;
+}
+
+.navbar .search-right {
+  margin: 0 10px 0 10px;
+}
+
+.search_in_header {
+  position: relative;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  background: #fff;
+  border-radius: 35px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.search_in_header.active {
+  width: 220px;
+}
+
+.search_in_header .icon i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.search_in_header .input {
+  position: relative;
+  width: 170px;
+  height: 35px;
+  left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_in_header .input input {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+/* DARK AND LIGHT */
+/* mode_theme*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  margin: 0;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.theme-switch-wrapper .mode-container i {
+  font-size: 15px;
+  color: #060606;
+}
+/*-- //toggle switch --*/
+.mode-container {
+  width: 24px;
+  height: 24px;
+  padding: 3px 0;
+  margin-left: 20px;
+}
+
+.mode-container i.gg-sun {
+  display: none;
+}
+
+.mode-container i.gg-moon {
+  display: block;
+}
+
+input:checked + .mode-container i.gg-sun {
+  display: block;
+}
+
+input:checked + .mode-container i.gg-moon {
+  display: none;
+}
+
+.dark#myBody {
+  background: #222222;
+}
+
+.dark .banner h4,
+.dark .widget__item h2,
+.dark .widget__item ul li a,
+.dark .side_recent_comment,
+.dark .services__item h3 a,
+.dark .choose_us__content h2,
+.dark .text__item h4,
+.dark .farm__item h3,
+.dark .farm__item p,
+.dark .find__us h3,
+.dark .newsletter h3 {
+  color: white;
+}
+
+/* MENU BUTTON */
+/* menu */
+ul#menu {
+  margin: 0;
+  color: #fff;
+  z-index: 99;
+  font-size: 29px;
+}
+
+ul#menu > li {
+  float: left;
+  list-style-type: none;
+  position: relative;
+  width: 100%;
+}
+
+ul#menu label {
+  position: relative;
+  display: block;
+  transition: all 0.3s;
+  cursor: pointer;
+  text-align: center;
+  margin: 0;
+}
+
+ul#menu label span {
+  line-height: 1em;
+  color: #060606;
+}
+
+ul#menu input {
+  display: none;
+}
+
+ul#menu input:checked ~ ul.submenu {
+  max-height: 400px;
+  transition: max-height 0.5s ease-in;
+}
+
+/* Second level menu*/
+ul.submenu {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  background: #fff;
+  transition: max-height 0.5s ease-out;
+  position: absolute;
+  min-width: 8em;
+  right: 0;
+  border-radius: 4px;
+  box-shadow: 0 20px 62px rgba(4, 20, 69, 0.1);
+}
+
+ul.submenu li a {
+  display: block;
+  padding: 7px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  color: #060606;
+}
+
+ul.submenu li.current_page_item a {
+  color: #fb811e;
+}
+/* END HEADER */
+
 .main_container {
   width: 100%;
 }
@@ -538,7 +789,7 @@ ul {
   transform: translate(0%, -50%);
   z-index: 1;
 }
-.customer .carousel-inner .overplay {
+.customer .carousel-inner .overlay {
   background-color: rgba(39, 43, 54, 0.5);
   width: 100%;
   z-index: 2;
@@ -708,7 +959,7 @@ nav ul.breadcrumbs {
 }
 .row .col-4 .card img {
   border-radius: 10px;
-  width: 90%;
+  width: 100%;
   transform: translate(17px, 17px);
 }
 .card-body-hover .text_hover h4 {
@@ -727,40 +978,50 @@ nav ul.breadcrumbs {
   color: #707070;
   font-size: 17px;
 }
-
+.card-body-hover {
+  height: 100%;
+  position: absolute;
+  z-index: 6;
+  width:80%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(7 7 7 / 54%);
+}
 .card-body-hover .text_hover {
-  position:absolute;
-  transform: translate( 3px, -258px);
+  position: absolute;
+  transform: translateY(-50%);
   padding: 0 20px;
   transition: all 0.8s;
-
- 
+  /* background-color: rgb(7 7 7 / 54%);
+  width: 90%;
+  text-align: center; */
 }
 .card-body-hover .text_hover h4 {
   color: white;
   font-size: 24px;
   text-align: center;
   font-weight: 600;
- 
 }
 
 .card-body-hover .text_hover p {
   color: white;
   text-align: center;
   font-size: 17px;
-
 }
 
- .icon_hover i {
-  position:relative; 
+.icon_hover i {
+  opacity: 0;
+  position: relative;
   color: white;
   text-align: center;
   font-size: 20px;
   width: 100%;
-  transform: translate( 120px, -20px);
+  transform: translateY(40%);
   /* margin: 20px 20px; */
   padding: 0 10px;
   transition: all 0.8s;
+  
 }
 
 .card-body-title h5 {
@@ -776,23 +1037,20 @@ nav ul.breadcrumbs {
   text-align: center;
 }
 
-.content_card :hover .text_hover{
+.content_card :hover .text_hover {
   /* -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100); */
   opacity: 1;
-  transform: translate(0, -10px);
+  transform: translateY(0px);
 }
 
-.content_card :hover .icon_hover{
-  opacity:1;
-  transform: translate(0, 10px);
+.content_card :hover .icon_hover {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
-
-
-
-/* FOOTER */Ư
-footer h3 {
+/* FOOTER */
+Ư footer h3 {
   color: black;
 }
 footer p {
