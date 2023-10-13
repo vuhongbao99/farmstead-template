@@ -8,17 +8,14 @@ h1 {
     font-size: 2em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5,h6 {
     margin: 0;
     padding: 0;
     clear: both;
 }
-
+.container {
+    width: 80%;
+}
 .clear {
     clear: both;
 }
@@ -288,6 +285,7 @@ ul.submenu li.current_page_item a {
 }
 /* END HEADER */
 
+
 /* START BANNER */
 .banner {
     background-image: url(../img/inner-banner.png);
@@ -297,7 +295,6 @@ ul.submenu li.current_page_item a {
     position: relative;
     z-index: 0;
 }
-
 nav ul.breadcrumbs {
     line-height: 1.5;
     color: #707070;
@@ -307,22 +304,18 @@ nav ul.breadcrumbs {
     font-size: 15px;
     text-transform: capitalize;
 }
-
 .banner__content a {
     color: #707070;
 }
-
 /* END BANNER */
 
 /* SERVICES */
 .services__col {
     padding: 15px;
 }
-
 .services {
     position: relative;
 }
-
 .services .services__item {
     padding: 50px 35px;
     position: relative;
@@ -331,11 +324,9 @@ nav ul.breadcrumbs {
     box-shadow: rgb(0 0 0 / 3%);
     transition: all 0.5s;
 }
-
 .services__item:hover {
     box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1)
 }
-
 .services__item h3 a {
     margin: 25px 0 20px;
     margin-top: 25px;
@@ -349,22 +340,18 @@ nav ul.breadcrumbs {
     letter-spacing: 0;
     transition: all 0.5s;
 }
-
 .services__item i {
     color: #FB811E;
     font-size: 45px;
 }
-
 .services__item p {
     font-size: 17px;
     letter-spacing: 1px;
     color: #6b6b6b;
 }
-
 .services__item a:hover {
     color: #FB811E;
 }
-
 /* END SERVICES */
 
 
@@ -372,17 +359,14 @@ nav ul.breadcrumbs {
 .choose_us__img img {
     border-radius: 30px;
 }
-
 .choose_us__content {
     margin-top: 45px;
     padding: 0 50px;
 }
-
 .choose_us__content h3 {
     color: #FB811E;
     font-size: 22px;
 }
-
 .choose_us__content h2 {
     font-family: 'Volkhov', serif;
     font-size: 40px;
@@ -390,7 +374,6 @@ nav ul.breadcrumbs {
     font-weight: 600;
     color: black;
 }
-
 .choose_us__content p {
     font-size: 17px;
     font-family: 'Source Sans 3', sans-serif;
@@ -398,26 +381,23 @@ nav ul.breadcrumbs {
     color: #707070;
     line-height: 27px;
 }
-
 .text_info i {
     font-size: 30px;
     color: #FB811E;
 }
-
 .text__item h4 {
     font-size: 24px;
     margin-bottom: 10px;
     margin-left: 7px;
     font-weight: 600;
 }
-
 /* END CHOOSE US */
+
 
 /* NUMBER */
 .farm__content {
     text-align: center;
 }
-
 .farm__content i {
     width: 80px;
     height: 80px;
@@ -427,7 +407,6 @@ nav ul.breadcrumbs {
     color: #009F4D;
     font-size: 32px;
 }
-
 .farm__content h3 {
     letter-spacing: 3px;
     font-size: 3em;
@@ -435,7 +414,6 @@ nav ul.breadcrumbs {
     font-weight: 700;
     font-family: 'Source Sans 3', sans-serif;
 }
-
 .farm__content p {
     font-size: 17px;
     font-family: 'Source Sans 3', sans-serif;
@@ -443,17 +421,14 @@ nav ul.breadcrumbs {
 }
 
 
-/* CALL */
+    /* START CALL */
 .call {
     background-image: url(../img/bg2.jpg);
     background-size: cover;
     color: white;
-    /* filter: brightness(0.8); */
 }
-
 .call:before {
     content: "";
-    /* position: absolute; */
     top: 0;
     min-height: 100%;
     width: 100%;
@@ -462,25 +437,20 @@ nav ul.breadcrumbs {
     z-index: 1;
     background-color: rgba(12, 12, 12, 0.6);
 }
-
-.call_text {
-    z-index: 0;
-}
-
 .call__content h3 {
+    font-family: 'Volkhov', serif;
     font-size: 22px;
 }
-
 .call__content h2 {
+    font-family: 'Volkhov', serif;
     font-size: 40px;
 }
 
 
-/* BLOG POSTS */
+    /* START BLOG POSTS */
 .blog .blog__left {
     padding-right: 48px;
 }
-
 .blog__left .card {
     border: none;
     /* background-color: #fff; */
@@ -490,11 +460,9 @@ nav ul.breadcrumbs {
     margin-bottom: 1.5rem;
     padding: 1em;
 }
-
 .card__header:first-child {
     border-radius: 15px;
 }
-
 a.img__blog {
     width: 100%;
     /* height: 250px; */
@@ -502,7 +470,6 @@ a.img__blog {
     display: block;
     overflow: hidden;
 }
-
 .img__blog img {
     object-fit: cover;
     object-position: center;
@@ -520,7 +487,6 @@ a.img__blog {
     color: #707070;
     font-weight: normal;
 }
-
 .blog__item .card__body h5 span a {
     color: #FB811E;
 }
@@ -534,11 +500,9 @@ a.img__blog {
     margin-bottom: 8px;
     transition: .3s;
 }
-
 .blog__item a.blog__title:hover {
     color: #FB811E;
 }
-
 .blog__item button a {
     color: #fff;
 }
@@ -848,3 +812,4 @@ ul.footer__social li a:hover {
 
 
 /************* RESPONSIVE *************/
+
