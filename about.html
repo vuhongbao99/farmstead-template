@@ -50,6 +50,7 @@
 
     <!-- my css  -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./assets/css/variable.css" />
   </head>
 
   <body>
@@ -78,14 +79,18 @@
             <div class="clear"></div>
 
             <!-- light and dark theme -->
-            <div class="theme-switch-wrapper">
-              <label class="theme-switch" for="switchButton">
-                <input type="checkbox" id="switchButton" />
-                <div class="mode-container">
-                  <i class="gg-sun"></i>
-                  <i class="gg-moon"></i>
+            <div class="cont-ser-position mr-3 DarkandLight">
+              <nav class="navigation">
+                <div class="light-dark-wrapper">
+                  <label class="light-dark" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="mode-container">
+                      <i class="gg-sun"></i>
+                      <i class="gg-moon"></i>
+                    </div>
+                  </label>
                 </div>
-              </label>
+              </nav>
             </div>
 
             <!-- menu -->
@@ -100,13 +105,13 @@
                     id="menu-item-27"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-27"
                   >
-                    <a href="#">Home</a>
+                    <a href="./home.html">Home</a>
                   </li>
                   <li
                     id="menu-item-34"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"
                   >
-                    <a href="#">About</a>
+                    <a href="./about.html">About</a>
                   </li>
                   <li
                     id="menu-item-32"
@@ -118,7 +123,7 @@
                     id="menu-item-28"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"
                   >
-                    <a href="./blog.html">Blog Posts</a>
+                    <a href="#">Blog Posts</a>
                   </li>
                   <li
                     id="menu-item-29"
@@ -136,13 +141,13 @@
                     id="menu-item-31"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"
                   >
-                    <a href="#">404 page</a>
+                    <a href="./404.html">404 page</a>
                   </li>
                   <li
                     id="menu-item-33"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"
                   >
-                    <a href="#">Contact</a>
+                    <a href="./contact.html">Contact</a>
                   </li>
                 </ul>
               </li>
@@ -157,7 +162,7 @@
       <div class="banner__content container py-lg-5 py-sm-4 mt-5">
         <h4 class="fw-bold mb-2">Services</h4>
         <nav style="--bs-breadcrumb-divider: '>>'" aria-label="breadcrumb">
-          <ul class="breadcrumb">
+          <ul class="breadcrumb" style="background-color: unset;">
             <li class="breadcrumb-item fw-bold"><a href="#">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Library</li>
           </ul>
@@ -543,7 +548,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
+       <script src="../assets/js/jquery-3.3.1.min.js"></script>
+      <script src="../assets/js/jquery-2.2.4.min.js"></script>
+      <script src="../assets/js/counter.js"></script>
+      <script src="../assets/js/theme-change.js"></script>
     <!-- /* Magnific Popup */ -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"

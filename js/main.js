@@ -1,7 +1,9 @@
 // DARK AND LIGHT
-  document.getElementById("switchButton").onclick = function () {
+document.getElementById("switchButton").onclick = function () {
   document.getElementById("myBody").classList.toggle("dark");
 };
+
+
 
 (function () {
   // Back to Top - by CodyHouse.co
