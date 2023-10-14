@@ -1294,3 +1294,134 @@ ul.footer__social li a:hover {
 .my-mfp-zoom-in.mfp-removing.mfp-bg {
   opacity: 0;
 }
+
+/* team section */
+.w3l-team-61 {
+  background-color: var(--secondary-color);
+}
+
+.teams-gd {
+  background: #fff;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.w3l-team-61 .team-member,
+.w3l-team-61 .team-member .team-img {
+  position: relative;
+}
+
+.w3l-team-61 .team-member {
+  overflow: hidden;
+}
+
+.w3l-team-61 .team-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  background-color: rgb(8 8 8 / 54%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.w3l-team-61 .team-member:hover .team-hover .desk {
+  top: 35%;
+}
+
+.w3l-team-61 .team-member:hover .team-hover,
+.w3l-team-61 .team-member:hover .team-hover .desk,
+.w3l-team-61 .team-member:hover .team-hover .s-link {
+  opacity: 1;
+}
+
+.w3l-team-61 .team-hover .desk {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(-55%);
+  transition: all 0.3s 0.2s;
+  padding: 0 20px;
+}
+
+.w3l-team-61 .desk,
+.w3l-team-61 .desk h4,
+.w3l-team-61 .team-hover .s-link a {
+  text-align: center;
+  color: #1e272e;
+}
+
+.w3l-team-61 .team-member:hover .team-hover .s-link {
+  bottom: 10%;
+}
+
+.w3l-team-61 .team-member:hover .team-hover,
+.w3l-team-61 .team-member:hover .team-hover .desk,
+.w3l-team-61 .team-member:hover .team-hover .s-link {
+  opacity: 1;
+}
+
+.w3l-team-61 .team-hover .s-link {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  transform: translateY(45%);
+  transition: all 0.3s 0.2s;
+  font-size: 35px;
+}
+
+.w3l-team-61 .desk p {
+  color: #fff;
+}
+
+.w3l-team-61 .desk h4 a {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.w3l-team-61 .teams-gd h5 a {
+  font-weight: bold;
+  color: #060606;
+  font-size: 21px;
+}
+
+.w3l-team-61 .team-member .s-link a {
+  margin: 0 10px;
+  color: #1e272e;
+  font-size: 16px;
+}
+
+.w3l-team-61 .s-link span.fa {
+  color: #fff;
+}
+
+.w3l-team-61 .s-link span.fa:hover {
+  color: var(--opposite-color);
+}
+
+.w3l-team-61 .team-member .s-link a:hover {
+  color: var(--primary-color);
+}
+
+.w3l-team-61 .teams-gd a:hover {
+  color: var(--primary-color);
+}
+
+.w3l-team-61 .desk h4 {
+  margin-bottom: 4px;
+}
+
+.w3l-team-61 .team-title span {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 1px;
+  display: block;
+}
+
+/* //team section */
