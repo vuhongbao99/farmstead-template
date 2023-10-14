@@ -959,8 +959,9 @@ nav ul.breadcrumbs {
 }
 .row .col-4 .card img {
   border-radius: 10px;
-  width: 100%;
+  width: 90%;
   transform: translate(17px, 17px);
+  /* background-color: rgb(7 7 7 / 54%); */
 }
 .card-body-hover .text_hover h4 {
   font-size: #1e272e;
@@ -980,17 +981,17 @@ nav ul.breadcrumbs {
 }
 .card-body-hover {
   height: 100%;
-  position: absolute;
+  position: relative;
   z-index: 6;
   width:80%;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgb(7 7 7 / 54%);
+  /* background-color: rgb(7 7 7 / 54%); */
 }
 .card-body-hover .text_hover {
   position: absolute;
-  transform: translateY(-50%);
+  transform: translateY(-55%);
   padding: 0 20px;
   transition: all 0.8s;
   /* background-color: rgb(7 7 7 / 54%);
@@ -1011,13 +1012,13 @@ nav ul.breadcrumbs {
 }
 
 .icon_hover i {
-  opacity: 0;
+  opacity: 1;
   position: relative;
   color: white;
   text-align: center;
   font-size: 20px;
   width: 100%;
-  transform: translateY(40%);
+  transform: translateY(45%);
   /* margin: 20px 20px; */
   padding: 0 10px;
   transition: all 0.8s;
