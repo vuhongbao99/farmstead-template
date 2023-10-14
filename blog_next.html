@@ -50,6 +50,7 @@
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./assets/css/variable.css">
   </head>
 
   <body id="myBody">
@@ -304,6 +305,37 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+      <script src="../assets/js/jquery-2.2.4.min.js"></script>
+      <script src="../assets/js/counter.js"></script>
+      <script src="../assets/js/theme-change.js"></script>
+      <!-- MENU-JS -->
+      <script>
+        $(window).on("scroll", function () {
+          var scroll = $(window).scrollTop();
+
+          if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+          } else {
+            $("#site-header").removeClass("nav-fixed");
+          }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+          $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+          if ($(window).width() > 991) {
+            $("header").removeClass("active");
+          }
+          $(window).on("resize", function () {
+            if ($(window).width() > 991) {
+              $("header").removeClass("active");
+            }
+          });
+        });
+      </script>
 
     <script src="js/main.js"></script>
     
