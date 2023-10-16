@@ -1,8 +1,19 @@
 // DARK AND LIGHT
 document.getElementById("switchButton").onclick = function () {
-  document.getElementById("myBody").classList.toggle("dark");
+  const body = document.getElementById("myBody");
+  body.classList.toggle("dark");
+
+  // Lưu trạng thái theme vào Local Storage
+  const isDarkTheme = body.classList.contains("dark");
+  localStorage.setItem("theme", isDarkTheme ? "dark" : "light");
 };
 
+document.addEventListener("DOMContentLoaded", function () {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.getElementById("myBody").classList.add("dark");
+  }
+});
 
 // PAGINATION
 $(document).ready(function () {
