@@ -907,7 +907,10 @@ ul.footer__social li a:hover {
 }
 
 
-
-
 /************* RESPONSIVE *************/
-
+@media screen and (max-width:575.98px) {
+    .navbar-expand-lg {
+        display: grid;
+        grid-template-rows: auto;
+    }
+}
