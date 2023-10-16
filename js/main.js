@@ -35,7 +35,6 @@ $(document).ready(function () {
   });
 });
 
-
 // STICKY SIDEBAR
 $('document').ready(function () {
   let sidebar = $('.blog__right');
